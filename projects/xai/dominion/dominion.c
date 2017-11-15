@@ -726,9 +726,11 @@ int village_card(struct gameState *state, int *currentPlayer, int *handPos){
 }
 //SMITHY REFRACTORED
 int smithy_card(struct gameState *state, int *currentPlayer, int *handPos){
-    //+3 Cards
+    //+3 Cards originally
+    //+5 cards now
     int i;
-    for (i = 0; i < 3; i++)
+    //for (i = 0; i < 3; i++)
+    for (i = 0; i < 5; i++)
   {
     drawCard(*currentPlayer, state);
   }
