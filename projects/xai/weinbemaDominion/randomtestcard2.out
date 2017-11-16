@@ -1,0 +1,313 @@
+Results for running random card test
+---Smithy Card Test---
+---------TEST 0--------
+    Card count in hand before: 5
+    Coin count before: 4
+    Card count after: 8
+        Expected: 7
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 1--------
+    Card count in hand before: 8
+    Coin count before: 4
+    Card count after: 8
+        Expected: 10
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 2--------
+    Card count in hand before: 8
+    Coin count before: 4
+    Card count after: 7
+        Expected: 10
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 3--------
+    Card count in hand before: 7
+    Coin count before: 4
+    Card count after: 6
+        Expected: 9
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 4--------
+    Card count in hand before: 6
+    Coin count before: 4
+    Card count after: 5
+        Expected: 8
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 5--------
+    Card count in hand before: 5
+    Coin count before: 4
+    Card count after: 4
+        Expected: 7
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 6--------
+    Card count in hand before: 4
+    Coin count before: 4
+    Card count after: 3
+        Expected: 6
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 7--------
+    Card count in hand before: 3
+    Coin count before: 4
+    Card count after: 2
+        Expected: 5
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 8--------
+    Card count in hand before: 2
+    Coin count before: 4
+    Card count after: 1
+        Expected: 4
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 9--------
+    Card count in hand before: 1
+    Coin count before: 4
+    Card count after: 0
+        Expected: 3
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 10--------
+    Card count in hand before: 0
+    Coin count before: 4
+    Card count after: -1
+        Expected: 2
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+Smithy: FAIL test
+---------TEST 11--------
+    Card count in hand before: -1
+    Coin count before: 4
+    Card count after: -2
+        Expected: 1
+        FAIL: card count is not correct
+    Coin count after: -1
+        Expected: 0
+        FAIL: coin cost is not correct
+Smithy: FAIL test
+---------TEST 12--------
+    Card count in hand before: -2
+    Coin count before: -1
+    Card count after: -3
+        Expected: 0
+        FAIL: card count is not correct
+    Coin count after: -1
+        Expected: -5
+        FAIL: coin cost is not correct
+Smithy: FAIL test
+---------TEST 13--------
+    Card count in hand before: -3
+    Coin count before: -1
+    Card count after: -4
+        Expected: -1
+        FAIL: card count is not correct
+    Coin count after: -1
+        Expected: -5
+        FAIL: coin cost is not correct
+Smithy: FAIL test
+---------TEST 14--------
+    Card count in hand before: -4
+    Coin count before: -1
+    Card count after: -5
+        Expected: -2
+        FAIL: card count is not correct
+    Coin count after: -1
+        Expected: -5
+        FAIL: coin cost is not correct
+Smithy: FAIL test
+Function 'compare'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:100.00% of 4
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'kingdomCards'
+Lines executed:0.00% of 12
+No branches
+No calls
+
+Function 'initializeGame'
+Lines executed:85.90% of 78
+Branches executed:95.65% of 46
+Taken at least once:78.26% of 46
+No calls
+
+Function 'shuffle'
+Lines executed:100.00% of 18
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'playCard'
+Lines executed:78.57% of 14
+Branches executed:100.00% of 10
+Taken at least once:60.00% of 10
+No calls
+
+Function 'buyCard'
+Lines executed:76.92% of 13
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'numHandCards'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'whoseTurn'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'endTurn'
+Lines executed:100.00% of 22
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+
+Function 'isGameOver'
+Lines executed:75.00% of 12
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'scoreFor'
+Lines executed:100.00% of 26
+Branches executed:100.00% of 42
+Taken at least once:73.81% of 42
+No calls
+
+Function 'getWinners'
+Lines executed:0.00% of 33
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+No calls
+
+Function 'drawCard'
+Lines executed:95.83% of 24
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+No calls
+
+Function 'getCost'
+Lines executed:23.33% of 30
+Branches executed:100.00% of 28
+Taken at least once:17.86% of 28
+No calls
+
+Function 'executeSmithy'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'executeAdventurer'
+Lines executed:100.00% of 17
+Branches executed:100.00% of 10
+Taken at least once:100.00% of 10
+No calls
+
+Function 'executeVillage'
+Lines executed:0.00% of 4
+No branches
+No calls
+
+Function 'executeCutpurse'
+Lines executed:0.00% of 16
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'executeGreat_hall'
+Lines executed:0.00% of 4
+No branches
+No calls
+
+Function 'cardEffect'
+Lines executed:4.80% of 250
+Branches executed:13.29% of 173
+Taken at least once:2.31% of 173
+No calls
+
+Function 'discardCard'
+Lines executed:73.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'gainCard'
+Lines executed:53.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'updateCoins'
+Lines executed:100.00% of 14
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+File 'dominion.c'
+Lines executed:41.95% of 646
+Branches executed:52.29% of 415
+Taken at least once:33.73% of 415
+No calls
+dominion.c:creating 'dominion.c.gcov'
+

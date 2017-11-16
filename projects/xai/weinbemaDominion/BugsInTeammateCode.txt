@@ -1,0 +1,12 @@
+Bugs found in code
+
+1) isGameOver()
+	- function failed when
+		a) there are 1 province cards left
+		b) when there are 1 province cards left and 1 empty supply(adventurer)
+2) updateCoins()
+	- function failed when there were specific combinations of gold, silver, and copper
+3) Smithy Card
+	- failed, there were 4 cards drawn, not 3
+4)Village Card
+	-failed, there were 3 actions, not 2 after the card was drawn

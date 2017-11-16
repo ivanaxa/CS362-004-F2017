@@ -1,0 +1,2052 @@
+------TESTING isGameOver():------
+isGameOver(): PASS when game is new
+isGameOver(): PASS when there are 0 province cards left
+isGameOver(): FAILED when there are 1 province cards left
+    expected a PASS(return value 0) when there are 1 province cards
+isGameOver(): FAILED when there are 1 province cards left and 1 empty supply (adventurer)
+    expected a PASS(return value 0) when there are 1 province cards and 1 empty supply (adventurer)
+isGameOver(): PASS when there are 1 province cards left and 3 empty supply cards
+------TESTING getCost():------
+getCost(): PASS when card is curse
+getCost(): PASS when card is estate
+getCost(): PASS when card is 2
+getCost(): PASS when card is 3
+getCost(): PASS when card is 4
+getCost(): PASS when card is 5
+getCost(): PASS when card is 6
+getCost(): PASS when card is 7
+getCost(): PASS when card is 8
+getCost(): PASS when card is 9
+getCost(): PASS when card is 10
+getCost(): PASS when card is 11
+getCost(): PASS when card is 12
+getCost(): PASS when card is 13
+getCost(): PASS when card is 14
+getCost(): PASS when card is 15
+getCost(): PASS when card is 16
+getCost(): PASS when card is 17
+getCost(): PASS when card is 18
+getCost(): PASS when card is 19
+getCost(): PASS when card is 20
+getCost(): PASS when card is 21
+getCost(): PASS when card is 22
+getCost(): PASS when card is 23
+getCost(): PASS when card is 24
+getCost(): PASS when card is 25
+getCost(): PASS when card is 26
+------TESTING shuffle():------
+shuffle(): PASS
+    the number of cards is the same before and after
+------TESTING updateCoins():------
+Test player 0 with 1 treasure card(s) and 0 bonus.
+G.coins = 1, expected = 1
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 2, expected = 2
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 1 bonus.
+G.coins = 2, expected = 2
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 2 bonus.
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 3 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 4 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 5 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 6 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 7 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 8 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 9 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 1 treasure card(s) and 10 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 0 bonus.
+G.coins = 2, expected = 2
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 1 bonus.
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 2 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 3 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 4 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 5 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 6 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 7 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 8 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 9 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 2 treasure card(s) and 10 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 0 bonus.
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 1 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 2 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 3 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 4 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 5 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 6 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 7 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 8 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 9 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 3 treasure card(s) and 10 bonus.
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 0 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 1 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 2 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 3 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 4 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 5 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 6 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 7 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 8 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 20, expected = 20
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 9 bonus.
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 21, expected = 21
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 4 treasure card(s) and 10 bonus.
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 22, expected = 22
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 0 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 1 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 2 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 3 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 4 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 5 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 20, expected = 20
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 6 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 21, expected = 21
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 7 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 22, expected = 22
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 8 bonus.
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 23, expected = 23
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 9 bonus.
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 24, expected = 24
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 0 with 5 treasure card(s) and 10 bonus.
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 20, expected = 20
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 25, expected = 25
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 0 bonus.
+G.coins = 1, expected = 1
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 2, expected = 2
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 1 bonus.
+G.coins = 2, expected = 2
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 2 bonus.
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 3 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 4 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 5 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 6 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 7 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 8 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 9 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 1 treasure card(s) and 10 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 1, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 1, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 0 bonus.
+G.coins = 2, expected = 2
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 1 bonus.
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 2 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 3 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 4 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 5 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 6 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 7 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 8 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 9 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 2 treasure card(s) and 10 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 2, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 3, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 0 bonus.
+G.coins = 3, expected = 3
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 1 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 2 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 3 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 4 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 5 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 6 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 7 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 8 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 9 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 3 treasure card(s) and 10 bonus.
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 3, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 6, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 0 bonus.
+G.coins = 4, expected = 4
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 1 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 2 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 3 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 4 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 5 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 6 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 7 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 8 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 20, expected = 20
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 9 bonus.
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 21, expected = 21
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 4 treasure card(s) and 10 bonus.
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 22, expected = 22
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 4, expected = 7
+updateCoins() 
+	FAIL: with 4 copper and 1 gold
+G.coins = 9, expected = 12
+updateCoins() 
+	FAIL: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 0 bonus.
+G.coins = 5, expected = 5
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 1 bonus.
+G.coins = 6, expected = 6
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 2 bonus.
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 3 bonus.
+G.coins = 8, expected = 8
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 4 bonus.
+G.coins = 9, expected = 9
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 5 bonus.
+G.coins = 10, expected = 10
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 20, expected = 20
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 6 bonus.
+G.coins = 11, expected = 11
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 16, expected = 16
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 21, expected = 21
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 7 bonus.
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 17, expected = 17
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 22, expected = 22
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 8 bonus.
+G.coins = 13, expected = 13
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 18, expected = 18
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 23, expected = 23
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 9 bonus.
+G.coins = 14, expected = 14
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 19, expected = 19
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 24, expected = 24
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+Test player 1 with 5 treasure card(s) and 10 bonus.
+G.coins = 15, expected = 15
+updateCoins() 
+	PASS: with all copper coins in hand
+G.coins = 20, expected = 20
+updateCoins() 
+	PASS: with all silver coins in hand
+G.coins = 25, expected = 25
+updateCoins() 
+	PASS: with all gold coins in hand
+G.coins = 7, expected = 7
+updateCoins() 
+	PASS: with 4 copper and 1 gold
+G.coins = 12, expected = 12
+updateCoins() 
+	PASS: with 1 copper, 1 silver and 3 gold
+------Smithy Card Test------
+    Card count in hand before: 5
+    Coin count before: 4
+    Card count after: 8
+        Expected: 7
+        FAIL: card count is not correct
+    Coin count after: 4
+        Expected: 0
+        SUCCESS: coin cost is correct
+    Cost of Card
+        Actual cost: 4
+        Expected cost: 4
+            PASS: cost of Smithy card is correct
+Smithy: FAIL test
+------Adventurer Card Test------
+    Card count in hand before: 5
+    Card count in hand after: 6
+    Expected count: 6
+        SUCCESS: card count is correct
+    Treasure count before Adventurer:4    Treasure count before Adventurer: 4
+    Treasure count after Adventurer: 6
+    Expected count: 6
+        SUCCESS: treasure count is correct
+    Cost of Card
+        Actual cost: 6
+        Expected cost: 6
+            PASS: cost of Adventurer card is correct
+Adventurer: PASS tests
+    Cost of Card
+        Actual cost: 3
+        Expected cost: 3
+            PASS: cost of village card is correct
+    Action Effect of Village
+        Actions before Village: 1
+        Actions after Village: 3
+        Expected Actions after Village: 2
+            FAIL: action effect of village card is incorrect
+    Card Count Effect of Village
+        Card Count before Village: 5
+        Card Count after Village: 5
+        Expected Card Count after Village: 5
+            PASS: card count effect of village card is correct
+------Village Card Test------
+Village: FAIL test
+------Testing Card: steward------
+    Cost of Card
+        Actual cost: 3
+        Expected cost: 3
+            PASS: cost of village card is correct
+TEST 1: choice1 = 1 = +2 cards
+hand count = 6, expected = 6
+deck count = 3, expected = 3
+coins = 4, expected = 4
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+TEST 2: choice1 = 2 = +2 coins
+hand count = 4, expected = 4
+deck count = 5, expected = 5
+coins = 6, expected = 6
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+TEST 3: choice1 = 3 = trash two cards
+starting cards: (18)(4)(2)(1)(9); removed: (4)(2); ending cards: (9)(1), expected: (1)(9)
+hand count = 2, expected = 2
+deck count = 5, expected = 5
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+starting cards: (18)(4)(2)(1)(9); removed: (4)(1); ending cards: (2)(9), expected: (2)(9)
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+starting cards: (18)(4)(2)(1)(9); removed: (4)(9); ending cards: (2)(1), expected: (2)(1)
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+starting cards: (18)(4)(2)(1)(9); removed: (2)(1); ending cards: (9)(4), expected: (4)(9)
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+starting cards: (18)(4)(2)(1)(9); removed: (2)(9); ending cards: (1)(4), expected: (4)(1)
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+starting cards: (18)(4)(2)(1)(9); removed: (1)(9); ending cards: (2)(4), expected: (4)(2)
+    PASS: Card Count is correct
+    PASS: Deck Count is correct
+    PASS: Coin count is correct
+SUCCESS: Steward pass tests
+Function 'compare'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:100.00% of 4
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'kingdomCards'
+Lines executed:0.00% of 12
+No branches
+No calls
+
+Function 'initializeGame'
+Lines executed:85.90% of 78
+Branches executed:95.65% of 46
+Taken at least once:78.26% of 46
+No calls
+
+Function 'shuffle'
+Lines executed:100.00% of 18
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+Function 'playCard'
+Lines executed:78.57% of 14
+Branches executed:100.00% of 10
+Taken at least once:60.00% of 10
+No calls
+
+Function 'buyCard'
+Lines executed:76.92% of 13
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'numHandCards'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'whoseTurn'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+Function 'endTurn'
+Lines executed:100.00% of 22
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+
+Function 'isGameOver'
+Lines executed:75.00% of 12
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'scoreFor'
+Lines executed:100.00% of 26
+Branches executed:100.00% of 42
+Taken at least once:73.81% of 42
+No calls
+
+Function 'getWinners'
+Lines executed:0.00% of 33
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+No calls
+
+Function 'drawCard'
+Lines executed:95.83% of 24
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+No calls
+
+Function 'getCost'
+Lines executed:23.33% of 30
+Branches executed:100.00% of 28
+Taken at least once:17.86% of 28
+No calls
+
+Function 'executeSmithy'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'executeAdventurer'
+Lines executed:100.00% of 17
+Branches executed:100.00% of 10
+Taken at least once:100.00% of 10
+No calls
+
+Function 'executeVillage'
+Lines executed:0.00% of 4
+No branches
+No calls
+
+Function 'executeCutpurse'
+Lines executed:0.00% of 16
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'executeGreat_hall'
+Lines executed:0.00% of 4
+No branches
+No calls
+
+Function 'cardEffect'
+Lines executed:4.80% of 250
+Branches executed:13.29% of 173
+Taken at least once:2.31% of 173
+No calls
+
+Function 'discardCard'
+Lines executed:73.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'gainCard'
+Lines executed:53.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+No calls
+
+Function 'updateCoins'
+Lines executed:100.00% of 14
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+File 'dominion.c'
+Lines executed:41.95% of 646
+Branches executed:52.29% of 415
+Taken at least once:33.73% of 415
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
